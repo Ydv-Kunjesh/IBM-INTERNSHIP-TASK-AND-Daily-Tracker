@@ -5,9 +5,9 @@ public class task {
         int b = 20;
         System.out.println("value of a before swapping: " + a);
         System.out.println("value of b before swapping: " + b);
-        int temp = a;
+        int temproary = a;
         a = b;
-        b = temp;
+        b =  temproary;
         System.out.println("value of a after swapping: " + a);
         System.out.println("value of b after swapping: " + b);
     }
@@ -16,8 +16,8 @@ public class task {
         // 2. WAP to convert Integer numbers to Binary numbers in java
          String binary = "";
          while (n > 0) {
-             int rem = n % 2;
-             binary = rem + binary;
+             int remainder = n % 2;
+             binary = remainder + binary;
              n = n / 2;
          }
          System.out.println("Value of Decimal number in binary is "+binary);
