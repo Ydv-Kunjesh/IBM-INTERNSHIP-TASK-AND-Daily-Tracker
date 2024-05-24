@@ -12,18 +12,16 @@ public class task {
         System.out.println("value of b after swapping: " + b);
     }
 
-    public static int task2(int n) {
-        // 2. WAP to convert Integer numbers and Binary numbers in java
-        int dec = 0;
-        int base = 0;
-        while (n > 0) {
-            int lastdigit = n % 10;
-            n = n / 10;
-            dec = dec + lastdigit * base;
-            base++;
-        }
-        System.out.println("The decimal number is " + dec);
-        return dec;
+    public static String task2(int n) {
+        // 2. WAP to convert Integer numbers to Binary numbers in java
+         String binary = "";
+         while (n > 0) {
+             int rem = n % 2;
+             binary = rem + binary;
+             n = n / 2;
+         }
+         System.out.println("Value of Decimal number in binary is "+binary);
+        return binary;
     }
     
     public static void task3() {
@@ -47,7 +45,7 @@ public class task {
         int r = 10;
         int t = 2;
         int si = (p * r * t) / 100;
-        System.out.println(si);
+        System.out.println("Simple Intrest is " + si);
         return si;
     }
 
@@ -55,7 +53,8 @@ public class task {
     public static void main(String[] args) {
        
         task1();
-        task2(10110);
+        task2(23);
+        // System.out.println(task2(4));
         task3();
         task4();
         task5(10000);
