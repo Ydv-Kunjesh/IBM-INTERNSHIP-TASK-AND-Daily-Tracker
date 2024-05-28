@@ -12,28 +12,32 @@ public class array {
         marks[1] = 61;
         marks[2] = 62;
         // System.out.println(marks[1]);
-        for (int i = 0; i < marks.length; i++) {
-            System.out.print(marks[i] + " ");
-        }
-        System.out.println(" ");
+        // for (int i = 0; i < marks.length; i++) {
+        //     System.out.print(marks[i] + " ");
+        // }
+        // System.out.println(" ");
 
-        System.out.println("array after update");
-        passingArg(marks);
-        for (int i = 0; i < marks.length; i++) {
-            System.out.print(marks[i] + " ");
-        }
-        System.out.println();
+        // System.out.println("array after update");
+        // passingArg(marks);
+        // for (int i = 0; i < marks.length; i++) {
+        //     System.out.print(marks[i] + " ");
+        // }
+        // System.out.println();
 
+        //  linear search
+        // int arrays[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+        // int element = 10;
+        // int index = linearSearch(arrays, element);
+        // if (index == -1) {
+        //     System.out.println("key not found");
+        // } else {
+        //     System.out.println("The  element is at index " + index);
+        // }
 
-        // linear search
-        int arrays[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-        int element = 10;
-        int index = linearSearch(arrays, element);
-        if (index == -1) {
-            System.out.println("key not found");
-        } else {
-            System.out.println("The  element is at index " + index);
-        }
+    //  finding Largest number in array
+                LargestInArray();
+    
+    
     }
 
     public static void passingArg(int marks[]) {
@@ -51,7 +55,7 @@ public class array {
     }
     
     // linear search in array 
-    public static int linearSearch(int arrays[],int key) {
+    public static int linearSearch(int arrays[], int key) {
         // scanning line by in list is known as linear search 
         // in array we use linear serach to  find the element in an array
 
@@ -64,4 +68,39 @@ public class array {
         return -1;
 
     }
+
+    public static void LargestInArray() {
+        int b[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+        int max = 0;
+        for (int i = 0; i <= b.length - 1; i++) {
+            if (b[i] > max) {
+                max = b[i];
+
+            }
+        }
+        System.out.println("Largest number in array is " + max);
+    }
+
+    //Binary search 
+    public static void BinarySearch() {
+        int b[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+        int start = 0;
+        int end = b.length - 1;
+        int mid = (start + end) / 2;
+        int value = 15;
+        while (start <= end) {
+            if (b[mid] == value) {
+                System.out.println("value found at index " + mid);
+                break;
+            }
+            else if (b[mid] < value) {
+                start = mid + 1;
+            } else if(b[mid] > value) {
+                end = mid - 1;
+            }
+
+        }
+    }
+    
+     
 } 
