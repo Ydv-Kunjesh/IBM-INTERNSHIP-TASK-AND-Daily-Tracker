@@ -43,10 +43,6 @@ public class day02 {
 
         // float dist = (float) Math.sqrt(deltaX * deltaX + deltaY * deltaY); //to find distance b/w coordinates
         double dist =  Math.sqrt(Math.pow(deltaX, 2) + Math.pow(deltaY, 2));
-
-
-       
-
         public void res() {
         System.out.println(a1 + " " + a2 + " " + b1 + " " + b2);
             System.out.println("Distance b/w cordinate is" + dist + "Cm");
