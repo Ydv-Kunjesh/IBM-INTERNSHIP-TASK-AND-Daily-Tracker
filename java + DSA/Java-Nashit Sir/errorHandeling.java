@@ -11,8 +11,9 @@ public class errorHandeling {
             System.out.println(e);
     }catch(ArrayIndexOutOfBoundsException e){
         System.out.println(e);
-    }
-        finally {
+    }catch(Exception e){
+        System.out.println("Something Went Wrong");
+    }finally {
             System.out.println("finally block");
         }
         int b = 10;
