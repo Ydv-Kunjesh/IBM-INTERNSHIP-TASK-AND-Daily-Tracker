@@ -127,6 +127,7 @@ public class day02 {
         first.b1 = inp.nextInt();
         System.out.print("enter value of b2");
         first.b2 = inp.nextInt();
+        inp.close();
         first.res();
     
             
