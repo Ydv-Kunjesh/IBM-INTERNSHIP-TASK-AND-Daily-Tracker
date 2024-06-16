@@ -1,0 +1,36 @@
+package javaConnetion;
+import java.sql.*;
+public class MysqlCOnnection {
+
+	public static void main(String[] args) throws  Exception{
+		Class.forName("com.mysql.cj.jdbc.Driver");
+	
+	Connection conn =   DriverManager.getConnection("jdbc:mysql://localhost/javadb","root","");
+		
+//		System.out.println("Connected Successfully." + conn);
+//		
+//		Statement st = conn.createStatement();
+//		
+//		st.executeUpdate("CREATE DATABASE kunjeshDb");
+//		ResultSet rs = st.executeQuery("show databases");
+//		while(rs.next()) {
+//			System.out.println(rs.getString(1));
+//		}
+	
+	
+	String query = "create table patna(name varchar(30),age int , mail varchar(30))";
+	Statement st = conn.createStatement();
+	st.executeUpdate(query);
+	System.out.println("table created");
+	
+	
+
+	}
+}
+
+
+
+
+
+ 
+          
