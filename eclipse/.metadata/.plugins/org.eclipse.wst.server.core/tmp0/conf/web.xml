@@ -14,7 +14,7 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.
---><web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee                       https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+--><web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee                       http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
 
   <!-- ======================== Introduction ============================== -->
   <!-- This document defines default values for *all* web applications      -->
@@ -25,11 +25,6 @@
   <!--                                                                      -->
   <!-- WARNING:  Do not configure application-specific resources here!      -->
   <!-- They should go in the "/WEB-INF/web.xml" file in your application.   -->
-
-
-  <!-- Set the default request and response character encodings to UTF-8.   -->
-  <request-character-encoding>UTF-8</request-character-encoding>
-  <response-character-encoding>UTF-8</response-character-encoding>
 
 
   <!-- ================== Built In Servlet Definitions ==================== -->
@@ -150,9 +145,9 @@
   <!--                       pages.  See the jasper documentation for more  -->
   <!--                       information.                                   -->
   <!--                                                                      -->
-  <!--   compilerSourceVM    Compiler source VM. [11]                      -->
+  <!--   compilerSourceVM    Compiler source VM. [1.7]                      -->
   <!--                                                                      -->
-  <!--   compilerTargetVM    Compiler target VM. [11]                      -->
+  <!--   compilerTargetVM    Compiler target VM. [1.7]                      -->
   <!--                                                                      -->
   <!--   development         Is Jasper used in development mode? If true,   -->
   <!--                       the frequency at which JSPs are checked for    -->
@@ -191,6 +186,10 @@
   <!--                       Should text strings be generated as char       -->
   <!--                       arrays, to improve performance in some cases?  -->
   <!--                       [false]                                        -->
+  <!--                                                                      -->
+  <!--   ieClassId           The class-id value to be sent to Internet      -->
+  <!--                       Explorer when using <jsp:plugin> tags.         -->
+  <!--                       [clsid:8AD9C840-044E-11D1-B3E9-00805F499D93]   -->
   <!--                                                                      -->
   <!--   javaEncoding        Java file encoding to use for generating java  -->
   <!--                       source files. [UTF8]                           -->
@@ -241,13 +240,7 @@
   <!--                       debugging be suppressed?  [false]              -->
   <!--                                                                      -->
   <!--   trimSpaces          Should template text that consists entirely of -->
-  <!--                       whitespace be removed from the output (true),  -->
-  <!--                       replaced with a single space (single) or left  -->
-  <!--                       unchanged (false)? Note that if a JSP page or  -->
-  <!--                       tag file specifies a trimDirectiveWhitespaces  -->
-  <!--                       value of true, that will take precedence over  -->
-  <!--                       this configuration setting for that page/tag.  -->
-  <!--                       [false]                                        -->
+  <!--                       whitespace be removed from the output? [false] -->
   <!--                                                                      -->
   <!--   xpoweredBy          Determines whether X-Powered-By response       -->
   <!--                       header is added by generated servlet.  [false] -->
@@ -1766,10 +1759,6 @@
         <mime-type>application/vnd.geogebra.file</mime-type>
     </mime-mapping>
     <mime-mapping>
-        <extension>ggs</extension>
-        <mime-type>application/vnd.geogebra.slides</mime-type>
-    </mime-mapping>
-    <mime-mapping>
         <extension>ggt</extension>
         <mime-type>application/vnd.geogebra.tool</mime-type>
     </mime-mapping>
@@ -2474,10 +2463,6 @@
         <mime-type>video/mj2</mime-type>
     </mime-mapping>
     <mime-mapping>
-        <extension>mjs</extension>
-        <mime-type>text/javascript</mime-type>
-    </mime-mapping>
-    <mime-mapping>
         <extension>mk3d</extension>
         <mime-type>video/x-matroska</mime-type>
     </mime-mapping>
@@ -2914,10 +2899,6 @@
     <mime-mapping>
         <extension>oprc</extension>
         <mime-type>application/vnd.palm</mime-type>
-    </mime-mapping>
-    <mime-mapping>
-        <extension>opus</extension>
-        <mime-type>audio/ogg</mime-type>
     </mime-mapping>
     <mime-mapping>
         <extension>org</extension>
