@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>DynamicProject</display-name>
+  
+  <servlet>
+	<servlet-name>Kunjesh</servlet-name>
+	<servlet-class>com.dynamic.kunjeshC</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	<servlet-name>Kunjesh</servlet-name>
+	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+ <!-- 2nd mapping --> 
+ 
+ <servlet>
+	<servlet-name>Anshu</servlet-name>
+	<servlet-class>com.dynamic.anshuC</servlet-class>
+	
+	<init-param>
+		<param-name>phone</param-name>
+		<param-value>Infinix note 11s</param-value>
+	</init-param>
+	
+	
+	
+ </servlet>
+ 
+ <servlet-mapping>
+	<servlet-name>Anshu</servlet-name>
+	<url-pattern>/anshu</url-pattern>
+ </servlet-mapping>
+  
+  <!--  Setting servlet Context -->
+  
+  <context-param>
+	<param-name>Name</param-name>
+	<param-value>Kunjesh Yadav</param-value>
+  </context-param>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
