@@ -160,7 +160,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\Users\kunje\Desktop\Web-Dev\Web-Dev\IBM-INTERNSHIP-TASK-AND-Daily-Tracker\eclipse\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\kunje\Desktop\Web-Dev\Web-Dev\IBM-INTERNSHIP-TASK-AND-Daily-Tracker\eclipse\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CRUD" path="/CRUD" reloadable="true" source="org.eclipse.jst.jee.server:CRUD"/></Host>
+      <Context docBase="C:\Users\kunje\Desktop\Web-Dev\Web-Dev\IBM-INTERNSHIP-TASK-AND-Daily-Tracker\eclipse\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\kunje\Desktop\Web-Dev\Web-Dev\IBM-INTERNSHIP-TASK-AND-Daily-Tracker\eclipse\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\springWebApp" path="/springWebApp" reloadable="true" source="org.eclipse.jst.j2ee.server:springWebApp"/></Host>
     </Engine>
   </Service>
 </Server>

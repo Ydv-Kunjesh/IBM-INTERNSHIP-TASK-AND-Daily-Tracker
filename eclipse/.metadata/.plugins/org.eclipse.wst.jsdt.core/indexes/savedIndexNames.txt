@@ -1,10 +1,6 @@
 INDEX VERSION 1.4+C:\Users\kunje\Desktop\Web-Dev\Web-Dev\IBM-INTERNSHIP-TASK-AND-Daily-Tracker\eclipse\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-1797649474.index
-1306869592.index
 1130383514.index
-1279144244.index
-1980247325.index
+1797649474.index
+326369089.index
 3727531826.index
-2855521259.index
 1347338658.index
-670173287.index
